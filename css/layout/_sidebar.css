@@ -1,0 +1,107 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    background-color: var(--sidebar-bgc);
+    padding: 2rem 0;
+}
+.sidebar > * {
+    margin-bottom: 4rem;
+}
+.sidebar-container {
+    padding: 0 2rem;
+}
+.sidebar__title {
+    background-color: var(--sidebar-bgc-title);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+.sidebar__title h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+.contacts__photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.contacts__photo img {
+    width: 40%;
+    display: block;
+
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 9999px;
+}
+.contacts-items li:not(:last-child) {
+    margin-bottom: .5rem;
+}
+.contacts-items li {
+    display: flex;
+    align-items: center;
+}
+.contacts-items li img {
+    width: 2rem;
+    background-color: #fff;
+    border-radius: 9999px;
+    margin-right: 1rem;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.language-level {
+    position: relative;
+}
+.language-level__item {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #aaa;
+    border-radius: 9999px;
+}
+.language-level__item.active {
+    background-color: #fff;
+}
+.language-level__text {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin: 0;
+}
+
+.skills-items,
+.traits-items,
+.hobbies-items {
+    list-style: initial;
+    padding-left: 2rem;
+}
+.skill__item {
+    position: relative;
+}
+.skill__item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.skill-progress {
+    height: 2px;
+    margin: 4px 0;
+    background-color: #bbb;
+}
+.skill-progress-bar {
+    width: 60%;
+    height: 2px;
+    background-color: #333;
+}
+.skill-progress__text {
+    position: absolute;
+    right: 0;
+}
+.traits__item:not(:last-child),
+.hobbies__item:not(:last-child) {
+    margin-bottom: .5rem;
+}
